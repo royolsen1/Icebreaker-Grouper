@@ -6,10 +6,10 @@
     <title>sekskant</title>
 </head>
 <body>
-    <svg height="150" width="200">
+    <svg height="1000" width="1000" >
         <defs>
             <linearGradient id="r" x1="80" y1="10" x2="80" y2="110" gradientUnits="userSpaceOnUse">
-                <stop stop-color="red" offset="0" />
+                <stop stop-color="red" stop-opacity="1" offset="0" />
                 <stop stop-color="white" stop-opacity="0" offset="1" />
             </linearGradient>
         </defs>
@@ -17,22 +17,25 @@
         <defs>
             <linearGradient id="b" x1="36.7" y1="35" x2="123.3" y2="85" gradientUnits="userSpaceOnUse">
                 <stop stop-color="white" stop-opacity="0" offset="0" />
-                <stop stop-color="blue" offset="1" />
+                <stop stop-color="blue" stop-opacity="0.5" offset="1" />
             </linearGradient>
         </defs>
         <defs>
             <linearGradient id="g" x1="123.3" y1="35" x2="36.7" y2="85" gradientUnits="userSpaceOnUse">
                 <stop stop-color="white" stop-opacity="0" offset="0" />
-                <stop stop-color="green" offset="1" />
+                <stop stop-color="green" stop-opacity="0.85" offset="1" />
             </linearGradient>
         </defs>
-        <!--<line x1="80" y1="10" x2="80" y2="110" stroke="url(#r)" stroke-width="57.9" opacity="0.5" />
-        <line x1="36.7" y1="35" x2="123.3" y2="85" stroke="url(#b)" stroke-width="57.9" opacity="0.5" />
-        <line x1="123.3" y1="35" x2="36.7" y2="85" stroke="url(#g)" stroke-width="57.9" opacity="0.5" />
-        -->
-        <polygon points="22.3,60 51.1,10 108.9,10 137.7,60 108.9,110 51.1,110" stroke="black" fill="url(#r)" stroke-width="0.5" opacity="1"/>
-        <polygon points="22.3,60 51.1,10 108.9,10 137.7,60 108.9,110 51.1,110" stroke="black" fill="url(#g)" stroke-width="0.5" opacity="0.85"/>
-        <polygon points="22.3,60 51.1,10 108.9,10 137.7,60 108.9,110 51.1,110" stroke="black" fill="url(#b)" stroke-width="0.5" opacity="0.6"/>
+        
+        
+        <polygon points="22.3,60 51.1,10 108.9,10 137.7,60 108.9,110 51.1,110" stroke="black" fill="url(#r)" stroke-width="0.5" />
+        <polygon points="22.3,60 51.1,10 108.9,10 137.7,60 108.9,110 51.1,110" stroke="black" fill="url(#g)" stroke-width="0.5" />
+        <polygon points="22.3,60 51.1,10 108.9,10 137.7,60 108.9,110 51.1,110" stroke="black" fill="url(#b)" stroke-width="0.5" />
+        
+        <line x1="80" y1="60" x2="80" y2="110" stroke="black" stroke-width="0.5" />
+        <line x1="36.7" y1="35" x2="80" y2="60" stroke="black" stroke-width="0.5" />
+        <line x1="123.3" y1="35" x2="80" y2="60"  stroke="black" stroke-width="0.5" />
+        
         <!--
         <line x1="42.3" y1="100" x2="157.7" y2="100" style="stroke:red;stroke-opacity:0.3"/>
         <line x1="71.1" y1="50" x2="128.9" y2="150" style="stroke:green;stroke-opacity:0.3"/>
