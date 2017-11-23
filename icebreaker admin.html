@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Admin panel</title>
+    <link rel="stylesheet" type="text/css" href="icebreaker.css">
+    <script src="icebreaker.js"></script>
+        
+</head>
+<body>
+
+    <img src="diversity icebreaker.png" />
+    <h1>
+        admin panel
+    </h1>
+
+    <p>
+        Here you can adjust how you want the groups to be!<br />
+        Bear in mind that the groups must contain atleast 2 members<br />
+        Minimum group number is 2<br />
+    </p>
+    <p>
+        Number of groups
+    </p>
+    <input id="groupnumber" onchange="shownumber" type="range" min="1" max="8" /><br />
+    <div id="groupnumber">slider inputs how many groups here</div>
+    <p>
+        Members per group
+    </p>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">select number of <br />people pr group</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">2 Person's</a>
+            <a href="#">3 Person's</a>
+            <a href="#">4 Person's</a>
+            <a href="#">5 Person's</a>
+            <a href="#">6 Person's</a>
+            <a href="#">7 Person's</a>
+            <a href="#">8 Person's</a>
+        </div>
+        <div id="peoplenumber">Number of people per groups</div>
+        
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <p>
+        mixed colored groups
+    </p>
+    <br />
+    <input type="checkbox" name="mixed" value="mixed"> will include mixed scores such as red-green or similar<br>
+    <button id="save" type="button">save</button>
+    <br />
+
+    <div id="selection">
+       
+        you have selected:
+    </div>
+
+
+    
+
+</body>
+</html>
